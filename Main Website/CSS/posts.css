@@ -1,0 +1,38 @@
+.content{
+    width:90%;
+    margin:30px auto 30px;
+}
+
+.content .main-content{
+    width:70%;
+    float:left;
+}
+
+.content .main-content .history{
+    margin:20px;
+}
+
+.content .main-content .post{
+    border:1px solid black;
+    width:97%;
+    height:270px;
+    margin:10px auto;
+    border-radius: 5px;
+    background:white;
+}
+
+.content .main-content .post .post-img{
+    width: 40%;
+    height:100%;
+    float:left;
+}
+
+.content .main-content .post .post-preview{
+    padding:10px;
+    width:50%;
+    float:right;
+}
+
+.headpos{
+    text-align:left;
+}
