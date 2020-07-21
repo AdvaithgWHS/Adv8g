@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <title>ADV8G</title>
+    <title>Corporation of Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/coe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Fav Icon-->
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 
 <body>
@@ -49,10 +45,23 @@
 
 <!------------------------------------------------------------------------------>
 
+<a href="1-coe.html"><img src="Images/coe.png" id="coe"></a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
 
-    
 
+<div id="udemyBox">
+    <img src="Images/udemy.png" id="ulogo">
+    <a href="3-udemy.html"><button class="button">Udemy</button></a>
+    <p>COE runs on udemy, Click here to view our courses grouped by catagories</p>
+</div>
 
 
 
@@ -77,24 +86,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-}
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
 }
 </script>
 
