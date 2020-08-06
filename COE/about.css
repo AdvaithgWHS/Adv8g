@@ -1,0 +1,42 @@
+.services {
+    border: 2px dashed black;
+    margin:auto;
+    margin-top: 20px;
+    padding-left: 5px;
+    width:200px
+}
+
+.info-text{
+    font-size: 15px;
+}
+
+.udemylogo{
+    padding-left: 25px;
+    padding-top: 10px;
+    width:80%;
+}
+
+.link{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 54px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+    text-align: center;
+    width:350px;
+    padding: 10px;
+    margin:auto;
+}
+
+#desc {
+    text-align: left;
+}

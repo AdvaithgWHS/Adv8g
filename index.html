@@ -1,101 +1,68 @@
 <!DOCTYPE html>
 <head>
     <title>ADV8G</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="sidebar.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Fav Icon-->
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 </head>
 
 <body>
 
+<!------------------------------------------------------------------------------------>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Founder</a>
+        <button class="dropdown-btn">Our Brands 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="COE/1-coe.html" style="font-size: 18px;">Corporation of Education</a>
+          </div>
+      </div>
 
-<!--------------------------------Menu------------------------------------------>
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="1-coe.html">Corporation of Education</a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
+      <div id="main">
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      </div>
+<!------------------------------------------------------------------------------------>  
+
+<div class="alert">
+  <span class="closebtn2" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong> For best quality, please use our website on a desktop or desktop view!</strong>
 </div>
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">&#9776; Our Brands</button> 
-</div>
-<!------------------------------------------------------------------------------>
+<a href="COE/1-coe.html"><div><img src="images/home-coe.png" alt="" class="coe"></div></a>
 
-
-<!---------------------------------Navigation----------------------------------->
-
-<div class="navbar">
-  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-  <a href="2-news.html"><i class="fa fa-fw fa fa-newspaper-o"></i> News</a> 
-  <a href="5-founder.html"><i class="fa fa-fw fa-user"></i> Founder</a>
-
-
-  <div class="topnav-right">
-    <div class="subnav">
-    <button class="subnavbtn">More <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="4-history.html"><i class="fa fa-fw fa fa-hdd-o"></i> History</a> 
-    </div>
-  </div>
-  </div>
-</div>
-
-<!------------------------------------------------------------------------------>
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-</body>
-
-
+      
+      
 <script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
     }
+      
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    }
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
   }
+  });
 }
 </script>
-
+    
+</body>
 </html>
