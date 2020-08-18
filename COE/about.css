@@ -1,9 +1,18 @@
-.services {
-    border: 2px dashed black;
-    margin:auto;
-    margin-top: 20px;
-    padding-left: 5px;
-    width:200px
+#name{
+    color: #0f7c90;
+    text-align: left;
+}
+
+#subtitle{
+    color: #73726c;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.icons{
+    color: #eb8a2f;
+    text-align: left;
+    
 }
 
 .info-text{

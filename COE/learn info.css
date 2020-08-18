@@ -25,15 +25,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 /* The Close Button */
-.close, .close2, .close3, .close4, .close5 {
+.close, .close2, .close3, .close4, .close5, .close6 {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close, .close2, .close3, .close4, .close5 :hover,
-.close, .close2, .close3, .close4, .close5 :focus {
+.close, .close2, .close3, .close4, .close5, .close6 :hover,
+.close, .close2, .close3, .close4, .close5, .close6 :focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
